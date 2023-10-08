@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "earthquake_data.csv"
+  },
+  "transform": [
+    {"calculate": "datum.alert == null ? 'null' : datum.alert", "as": "alert"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": { "field": "magnitude", "title": "Magnitude" },
+    "y": { "aggregate": "count", "title": "Frequency" },
+    "tooltip": [
+      { "field": "alert", "title": "Alert" }
+    ],
+    "color": {
+      "field": "alert",
+      "title": "Alert",
+      "scale": {
+        "domain": ["green", "yellow", "orange", "red"],
+        "range": ["green", "yellow", "orange", "red"]
+      }
+    }
+  },
+  "title": "Magnitude with Custom Alert Colors",
+  "selection": {
+    "legendSelect": {
+      "type": "multi",
+      "fields": ["alert"],
+      "bind": "legend"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "legendSelect"
+      }
+    }
+  ]
+}

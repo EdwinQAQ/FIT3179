@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "earthquake_data.csv"
+    },
+    "transform": [
+        {"bin": {"step": 1, "extent": [6, 10]}, "field": "magnitude", "as": "Magnitude_Bin"}
+    ],
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Magnitude_Bin",
+        "title": "Magnitude"
+      },
+      "y": {
+        "aggregate": "count",
+        "title": "Frequency",
+        "stack": "normalize"
+      },
+      "color": {
+        "field": "tsunami",
+        "title": "tsunami",
+        "type": "nominal",
+        "scale": {"range": ["#1f77b4", "#ff7f0e"]}
+      }
+    },
+    "title": "Magnitude resulting Tsunami",
+    "config": {
+      "view": {"stroke": "transparent"}
+    }
+  }
+  
