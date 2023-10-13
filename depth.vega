@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 250,
+    "height": 250,
+    "title": "Magnitude vs. Depth",
+    "data": {
+      "url": "https://raw.githubusercontent.com/EdwinQAQ/FIT3179/main/earthquake_data.csv"
+    },
+    "mark": "point",
+    "encoding": {
+        "x": {
+        "field": "magnitude",
+        "type": "quantitative",
+        "scale": {"domain": [6, 9.5]}  
+      },
+        "y": {"field": "depth", "type": "quantitative"}
+    }
+  }
+      
+  

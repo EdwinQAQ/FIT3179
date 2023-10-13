@@ -1,0 +1,93 @@
+html,
+/* top part */
+body {
+    background-color: #fffafd;
+}
+
+.pure-u-1{
+    width: fit-content;
+}
+
+#Heading {
+    margin-left: 10px;
+    width: 70vw;
+}
+
+.pure-u-1 img {
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    width: 15vw;
+    height: fit-content;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+}
+
+/* left part */
+#earthquake_map {
+    width: auto;
+    margin-top: 10px;
+}
+
+#alert {
+    width: auto;
+    margin-top: 10px;
+}
+
+.pure-u-2-1 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 50%;
+}
+
+.pure-u-2-2 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: right;
+    width: 45%;
+}
+
+#Explain-map {
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 18px;
+    color: blue;
+}
+
+.highlight {
+    color: blue;
+}
+
+/* right bottom part */
+#tsunami {
+    width: auto;
+    height: auto;
+}
+
+#depth {
+    width: 20vw;
+    height: auto;
+}
+
+#Explain-tsunami {
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+#Explain-depth {
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+p {
+    color: #0f0f0f;
+    font-size: 16px;
+    margin-left: 10px;
+}
