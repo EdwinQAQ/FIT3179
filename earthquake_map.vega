@@ -17,9 +17,7 @@
     "data": {
         "url":"https://raw.githubusercontent.com/EdwinQAQ/FIT3179/main/earthquake_data.csv"
     },
-    "transform": [
-      {"calculate": "datum.alert : datum.alert", "as": "alert"}
-    ],
+
     "mark": {"type": "circle", "tooltip": {"content": "data"}},
     "encoding": {"longitude": {"field": "longitude", "type": "quantitative"},
                 "latitude": {"field": "latitude", "type": "quantitative"},
