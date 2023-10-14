@@ -24,9 +24,7 @@
         "scale": {"range": ["white", "blue"]}
       }
     },
-    "title": "Magnitude resulting Tsunami",
-    "config": {
-      "view": {"stroke": "transparent"}
-    }
+    "title": "Magnitude resulting Tsunami"
+
   }
   
