@@ -5,7 +5,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/EdwinQAQ/FIT3179/main/earthquake_data.csv"
   },
-
+  "transform": [
+    {"calculate": "datum.alert : datum.alert", "as": "alert"}
+  ],
   "mark": "bar",
   "encoding": {
     "x": { "field": "magnitude", "title": "Magnitude" },
