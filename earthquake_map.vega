@@ -2,7 +2,12 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 700,
     "height": 350,
-    "title": "Earthquake map",
+    "config": {
+    "view": {
+      "openButton": false
+    },
+  },
+"title": "Earthquake map",
     "projection": {"type": "equalEarth"},
     "layer": [
     {
